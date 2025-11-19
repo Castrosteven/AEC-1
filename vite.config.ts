@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/AEC-1/",
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
   ),
